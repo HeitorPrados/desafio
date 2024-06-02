@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: white;
+}
+
+.div1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 20px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    position: relative;
+    width: 400px;
+    height: 240px;
+    background-color: #5EFEB1;
+    border: 40px solid red;
+}
+
+.bola1 {
+    position: absolute;
+    top: 80px;
+    left: 160px;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+@keyframes giro1 {
+    0% {
+        top: -60px;
+        left: 160px;
+    }
+    25% {
+        top: 80px;
+        left: 380px;
+    }
+    50% {
+        top: 220px;
+        left: 160px;
+    }
+    75% {
+        top: 80px;
+        left: -60px;
+    }
+    100% {
+        top: -60px;
+        left: 160px;
+    }
+}
+
+@keyframes giro2 {
+    0% {
+        top: 80px;
+        left: 380px;
+    }
+    25% {
+        top: 220px;
+        left: 160px;
+    }
+    50% {
+        top: 80px;
+        left: -60px;
+    }
+    75% {
+        top: -60px;
+        left: 160px;
+    }
+    100% {
+        top: 80px;
+        left: 380px;
+    }
+}
+
+@keyframes giro3 {
+    0% {
+        top: 220px;
+        left: 160px;
+    }
+    25% {
+        top: 80px;
+        left: -60px;
+    }
+    50% {
+        top: -60px;
+        left: 160px;
+    }
+    75% {
+        top: 80px;
+        left: 380px;
+    }
+    100% {
+        top: 220px;
+        left: 160px;
+    }
+}
+
+@keyframes giro4 {
+    0% {
+        top: 80px;
+        left: -60px;
+    }
+    25% {
+        top: -60px;
+        left: 160px;
+    }
+    50% {
+        top: 80px;
+        left: 380px;
+    }
+    75% {
+        top: 220px;
+        left: 160px;
+    }
+    100% {
+        top: 80px;
+        left: -60px;
+    }
+}
+
+.bola2, .bola3, .bola4, .bola5 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.bola2 {
+    top: -60px;
+    left: 160px;
+    background-color: lightyellow;
+    animation-name: giro1;
+}
+
+.bola5 {
+    top: 80px;
+    left: 380px;
+    background-color: lightblue;
+    animation-name: giro2;
+}
+
+.bola3 {
+    top: 220px;
+    left: 160px;
+    background-color: darkred;
+    animation-name: giro3;
+}
+
+.bola4 {
+    top: 80px;
+    left: -60px;
+    background-color: pink;
+    animation-name: giro4;
+}
